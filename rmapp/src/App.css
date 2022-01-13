@@ -3,12 +3,112 @@
 }
 
 .App-content {
-  background-color: #282c34;
+  background-color: rgb(65, 64, 64);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
+
+.body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.titulo {
+  margin-bottom: 0.5rem;
+  margin-top: 75px;
+  color: rgb(0, 197, 197);
+  font-size: 50px;
+  font-family: 'schwifty';
+}
+
+.texto {
+  margin-bottom: 15px;
+  color: rgb(250, 142, 0);
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.imagen {
+  width: 450px;
+  margin: 30px auto -65px auto;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.boton{
+    font-family: 'Lato', sans-serif;
+    margin: 30px auto 0px auto;
+  }
+  
+  .wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link_wrapper{
+    position: relative;
+  }
+  
+  a{
+    display: block;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    width: 350px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+    margin: 30px auto 0px auto;
+  }
+
+  .episodio {
+    /* Add shadows to create the "card" effect */
+    background-color: rgb(235, 149, 68);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 22px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .episodio:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .titulo_lista {
+    font-family: schwifty;
+    font-size: 50px;
+    color: rgb(0, 197, 197);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  @font-face {
+    font-family: schwifty;
+    src: url(../get_schwifty.ttf);
+  }
+
+  .Fav {
+    float: right;
+    background: transparent;
+    border: transparent;
+  }
+  
