@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import Episodes from './Episodes'
 import Pagination from './Pagination'
+import Search from './Search'
 
-export const Episodios = () => {
+export const Episodios = () => { 
     const apiURL = 'https://rickandmortyapi.com/api/episode'
     const [episodes, setEpisodes] = useState([])
     const [info, setInfo] = useState({})
@@ -10,7 +11,7 @@ export const Episodios = () => {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                setEpisodes(data.results)
+                setEpisodes(data.results) 
                 setInfo(data.info)
             })
             .catch(error => console.log(error))
@@ -32,6 +33,7 @@ export const Episodios = () => {
         <div className="container">
             <Episodes episodes={episodes} />
             <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+            <Search />
         </div>
     )
 }
