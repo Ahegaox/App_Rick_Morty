@@ -1,5 +1,4 @@
 import React from 'react';
-import bootstrap from 'bootstrap';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -9,23 +8,25 @@ import {
 } from "react-router-dom";
 import Inicio from './components/Inicio';
 import { Episodios } from './components/Episodios';
+import { favStore } from './stores/fav.stores';
 
 function App() {
-     
+  console.log(favStore);
+
   return (
     <Router>
-      <div class = "App-content">
+      <div className = "App-content">
         <Switch>
           <Route path="/" exact>
             <Inicio/>
-            <Link to="/Episodios" class="boton">
+            <Link to="/Episodios" className="boton">
               Lista de episodios
             </Link>
           </Route>
           <Route path="/Episodios">
             <div className="titulo_lista">Episodios</div>
             <Episodios/>
-            <Link to="/" class="boton">
+            <Link to="/" className="boton">
               Home
             </Link>
           </Route>
