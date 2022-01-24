@@ -19,9 +19,14 @@ const episodeSchema ={
 
 const EpisodeForm = () => ( <Form schema={episodeSchema} />);
 
+const sendData = () => {
+    console.log('enviando datos...' + episodeSchema)
+}
+
 function Search() {
     return (
         <div>
+            <form onSubmit={sendData}/>
             <h2>Search:</h2>
             <EpisodeForm />
         </div>
