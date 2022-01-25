@@ -112,3 +112,11 @@
     border: transparent;
   }
   
+  .formSearch {
+    background-color: rgb(235, 149, 68);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 20px;
+    width: 500px;
+  }
