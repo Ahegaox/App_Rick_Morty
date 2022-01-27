@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import Form from "react-jsonschema-form/lib/components/Form";
 import '../App.css';
 
-const episodeSchema ={
+const episodeSchema = {
     "title": "Please enter your episode",
     "type": "object",
     "required": [
@@ -18,7 +18,7 @@ const episodeSchema ={
     }
 };
 
-const EpisodeForm = () => ( <Form schema={episodeSchema} onSubmit={sendData} />);
+const EpisodeForm = ({}) => ( <Form schema={episodeSchema} onSubmit={sendData} />);
 
 const sendData = () => {
     console.log('enviando datos...' + episodeSchema.properties.episode.default)

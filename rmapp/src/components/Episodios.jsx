@@ -33,7 +33,7 @@ export const Episodios = () => {
         <div className="container">
             <Episodes episodes={episodes} />
             <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
-            <Search />
+            <Search episodeSearch={info.episode} />
         </div>
     )
 }
